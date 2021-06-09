@@ -18,6 +18,8 @@ body {
   margin: 0;
   font-family: "Public Sans", "Arial", sans-serif;
   background-color: grey;
+  overflow-x: hidden;
+  margin-top: 80px;
 }
 
 img {
@@ -37,6 +39,8 @@ img {
   position: fixed;
   width: 100%;
   z-index: 100;
+  top: 0;
+  left: 0;
   background-color: #FFFFFF;
 }
 
@@ -48,9 +52,7 @@ img {
   padding-bottom: 18px;
 }
 
-.site--nav {
 
-}
 
 .site--nav__list {
   display: flex;
@@ -67,13 +69,13 @@ img {
   padding-bottom: 30px;
   letter-spacing: -0.107692px;
   color: #9597A5;
+  transition: border-bottom 0.3s ease;
 }
 
 .site--nav__link:hover {
   color: #2D314D;
-  padding-top: 31px;
   border-bottom: 5px solid  #33D35E;
-  transition: 0.3s ease;
+  transition: border-bottom 0.3s ease;
 }
 
 .site--heading__link {
@@ -90,13 +92,13 @@ img {
 
 .hero--section {
   position: relative;
-    z-index: 1;
-    padding-top: 170px;
-    padding-bottom: 170px;
-    background-color: #fafafa;
-    background-image: url(../img/hero-bg-desktop.svg);
-    background-repeat: no-repeat;
-    background-position: calc(50% + 600px) -170px;
+  z-index: 1;
+  padding-top: 170px;
+  padding-bottom: 170px;
+  background-color: #fafafa;
+  background-image: url(../img/hero-bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% + 610px) -260px;
 }
 
 .site--heading__link:hover {
@@ -118,7 +120,7 @@ img {
   position: absolute;
   z-index: 1;
   left: calc(50% + 100px);
-  top: -35px;
+  top: -110px;
   width: 729px;
   height: 900px;
   background-image: url(../img/hero-phones-desktop.png);
@@ -300,7 +302,7 @@ img {
   display: flex;
   list-style: none;
   padding: 0;
-  margin-top: 35px;
+  margin-top: 50px;
 }
 
 
@@ -333,6 +335,8 @@ img {
 }
 
 .links {
+  font-size: 15px;
+  line-height: 26px;
   text-decoration: none;
   color: #FFFFFF;
 }
@@ -344,12 +348,14 @@ img {
 
 .inner{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .link {
-  margin-left: 0 auto;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 15px;
 }
 
 .text--easy {
@@ -362,4 +368,5 @@ img {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
+  margin-left: auto;
 }
